@@ -1,5 +1,4 @@
 //! Assembly instructions
-use core::arch::asm;
 macro_rules! instruction {
     ($(#[$attr:meta])*, $fnname:ident, $asm:expr, $asm_fn:ident) => (
         $(#[$attr])*
